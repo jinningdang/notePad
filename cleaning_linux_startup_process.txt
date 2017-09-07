@@ -1,0 +1,12 @@
+
+
+systemctl list-unit-files --type=service | grep enabled
+
+
+sudo systemctl stop bluetooth.service
+sudo systemctl disable bluetooth.service
+
+systemctl status bluetooth.service
+sudo systemctl mask bluetooth.service
+
+
